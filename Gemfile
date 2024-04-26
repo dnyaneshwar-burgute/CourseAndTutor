@@ -34,6 +34,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "pry-rails"
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
   # Display performance information such as SQL time and flame graphs for each request in your browser.
@@ -50,6 +51,11 @@ group :test do
   gem 'selenium-webdriver', '>= 4.0.0.rc1'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'rspec-rails', '~> 3.4'
+  gem 'database_cleaner'
+  gem "factory_bot_rails", "6.1.0"
+  gem "pry-byebug"
+  gem 'shoulda-matchers', '~> 5.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
