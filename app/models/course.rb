@@ -2,7 +2,7 @@
 class Course < ApplicationRecord
 
   # Associations
-  has_many :tutors
+  has_many :tutors, dependent: :destroy
 
   # Validations
   validates :title,
