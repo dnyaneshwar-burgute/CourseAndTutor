@@ -9,4 +9,5 @@ class Course < ApplicationRecord
             presence: true,
             uniqueness: true
 
+  accepts_nested_attributes_for :tutors, reject_if: :all_blank
 end
